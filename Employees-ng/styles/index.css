@@ -1,0 +1,48 @@
+#main-content{
+	position: relative;
+	top:45px;
+	margin: 0 auto;
+	height:100%;
+	background-color: #333;
+	color: #FFFFFF;
+	overflow: hidden;
+}
+
+
+#employee-list{
+	float:left;
+
+	margin: 10px;
+	min-height:200px;
+	min-width: 150px;
+	color: #000000;
+}
+
+#employee-details{
+	float:right;
+	margin:10px;
+	min-height: 300px;
+	min-width: 400px;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.employee-name{
+	margin: 5px;
+	padding-left: 10px;
+}
+
+.list-group{
+	margin-bottom: 5px;
+}
+
+h1{
+	text-align: center;
+}
+
+body,html{
+	height:100%;
+
+li:hover{
+	background-color: #46b8da;
+}
