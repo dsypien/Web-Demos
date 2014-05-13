@@ -29,34 +29,28 @@
             <li><a href="http://getbootstrap.com/examples/starter-template/#about">About</a></li>
             <li><a href="http://getbootstrap.com/examples/starter-template/#contact">Contact</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
 
     <div id="main-content" class="container">
-      <div class="starter-template">
+      <div class="starter-template"  ng-controller='employeesController' >
         <h1>Employee Information</h1>
-
-        <div id="employee-list" ng-controller="employeesController">
-			<div class="btn-group" >
-				<button type="button" class="btn btn-info">Choose an Employee</button>
-				  	<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-					    <span class="caret"></span>
-					    <span class="sr-only">Toggle Dropdown</span>
-				</button>
-				<ul class="dropdown-menu" role="menu">
-				    <li ng-repeat="emp in employees">
-			  			<a href="#">
-			  				<span class="glyphicon glyphicon-user"></span>
-			  				&nbsp;{{emp.firstname}}&nbsp;{{emp.lastname}}
-			  			</a>
-			  		</li>
-				    <li class="divider"></li>
-				    <li><a href="#">
-				    	<span class="glyphicon glyphicon-plus"></span>	
-				    	&nbsp;Add Employee
-				    </a></li>
-			  	</ul>
+        <h3>Select Employee : 
+			<select ng-model="selectedEmployee" ng-options="emp.firstname+' ' +emp.lastname for emp in employees"></select>
+		</h3>
+        <div id="employee-details">
+			<div >
+		 		{{selectedEmployee.firstname}}
+			</div>
+			<div>
+				{{selectedEmployee.lastname}}
+			</div>
+			<div>
+				{{selectedEmployee.dept}}
+			</div>
+			<div>
+				{{selectedEmployee.hired}}
 			</div>
 		</div>
 
@@ -81,10 +75,7 @@
 			    {'firstname': 'Jimmy', 'lastname': 'Derp', 'dept': 'Marketing', 'hired': '4/15/2013','ID': 22}
 			];
 
-			$scope.onNameClick = function(name){
-				alert("clicked");
-			};
-
+			$scope.selectedEmployee = $scope.employees[0];
 		});
 	</script>
 </body>
