@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-USA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Employees App (Angular) </title>
 
 	<!--CSS-->
@@ -33,31 +33,26 @@
       </div>
     </div>
 
-    <div id="main-content" class="container">
-      <div class="starter-template"  ng-controller='employeesController' >
-        <h1>Employee Information</h1>
-        <h3>Select Employee : 
-			<select ng-model="selectedEmployee" ng-options="emp.firstname+' ' +emp.lastname for emp in employees"></select>
-		</h3>
-        <div id="employee-details">
-			<div >
-		 		{{selectedEmployee.firstname}}
-			</div>
-			<div>
-				{{selectedEmployee.lastname}}
-			</div>
-			<div>
-				{{selectedEmployee.dept}}
-			</div>
-			<div>
-				{{selectedEmployee.hired}}
-			</div>
-			<img id="employee-pic" ng-src="{{selectedEmployee.pic}}"></div>
-		</div>
+	<div>
+		<h1>Employee Information</h1>
+	    <div id="main-content" class="container row">
+			<div class="starter-template row"  ng-controller='employeesController' >
+				<div class="col-md-4">		        
+				    <h3>Select Employee : 
+						<select ng-model="selectedEmployee" ng-options="emp.firstname+' ' +emp.lastname for emp in employees"></select>
+					</h3>
+				</div>
 
-      </div>
-
-    </div>
+				<div id="employee-details" class="col-md-8">
+					<p>First <input type="text" ng-value="selectedEmployee.firstname"></input> </p>
+					<p>Last<input type="text" ng-value="selectedEmployee.lastname"></input></p>
+					<p>Department<input type="text" ng-value="selectedEmployee.dept"></input></p>
+					<p>Hire Date<input type="text" ng-value="selectedEmployee.hired"></input></p>
+					<img id="employee-pic" ng-src="{{selectedEmployee.pic}}">
+				</div>
+  			</div>
+	  	</div>
+	  </div>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/angular.min.js"></script>

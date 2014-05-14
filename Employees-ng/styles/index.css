@@ -17,8 +17,9 @@
 }
 
 #employee-details{
-	margin-top: 2em;
+	max-width: 450px;
 }
+
 
 #employee-pic{
 	width: 200px;
@@ -33,9 +34,19 @@
 	margin-bottom: 5px;
 }
 
-body,html{
-	height:100%;
-
 li:hover{
 	background-color: #46b8da;
+}
+
+h1{
+	margin-top: 75px;
+	text-align: center;
+}
+
+p input{
+	float:right;
+}
+
+.col-md-6{
+	margin:1em;
 }

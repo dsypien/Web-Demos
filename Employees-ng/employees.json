@@ -1,8 +1,0 @@
-employees = [
-  {'firstname': 'James', 'lastname': 'Madison', 'dept': 'R&D', 'hired': '1/1/2009','ID': 80},
-    {'firstname': 'Peter', 'lastname':  'Griffen', 'dept': 'R&D', 'hired': '4/23/2014' ,'ID': 21 },
-    {'firstname': 'Dorian', 'lastname': 'Williams', 'dept': 'HR', 'hired': '5/9/2006','ID': 87},
-    {'firstname': 'Bridgit', 'lastname': 'Spanner', 'dept': 'R&D', 'hired': '6/13/2004','ID': 13},
-    {'firstname': 'Daniel', 'lastname': 'Tanner', 'dept': 'R&D', 'hired': '11/24/2009','ID': 45},
-    {'firstname': 'Optimus', 'lastname': 'Prime', 'dept': 'R&D', 'hired': '8/22/2004','ID': 19},
-    {'firstname': 'Jimmy', 'lastname': 'Derp', 'dept': 'Marketing', 'hired': '4/15/2013','ID': 22}];
