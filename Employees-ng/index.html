@@ -38,17 +38,17 @@
 	    <div id="main-content" class="container row">
 			<div class="starter-template row"  ng-controller='employeesController' >
 				<div class="col-md-4">		        
-				    <h3>Select Employee : 
-						<select ng-model="selectedEmployee" ng-options="emp.firstname+' ' +emp.lastname for emp in employees"></select>
-					</h3>
+				    <h3>Select Employee : </h3>
+					<select ng-model="selectedEmployee" ng-options="emp.firstname+' ' +emp.lastname for emp in employees"></select>
+					
 				</div>
 
 				<div id="employee-details" class="col-md-8">
-					<p>First <input type="text" ng-value="selectedEmployee.firstname"></input> </p>
-					<p>Last<input type="text" ng-value="selectedEmployee.lastname"></input></p>
-					<p>Department<input type="text" ng-value="selectedEmployee.dept"></input></p>
-					<p>Hire Date<input type="text" ng-value="selectedEmployee.hired"></input></p>
-					<img id="employee-pic" ng-src="{{selectedEmployee.pic}}">
+					<p>First <input type="text" ng-model="selectedEmployee.firstname"></input> </p>
+					<p>Last<input type="text" ng-model="selectedEmployee.lastname"></input></p>
+					<p>Department<input type="text" ng-model="selectedEmployee.dept"></input></p>
+					<p>Hire Date<input type="text" ng-model="selectedEmployee.hired"></input></p>
+					<img id="employee-pic" class="img-thumbnail" ng-src="{{selectedEmployee.pic}}">
 				</div>
   			</div>
 	  	</div>
