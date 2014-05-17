@@ -25,6 +25,34 @@
 	width: 200px;
 }
 
+#employee-slect-ctrl{
+	background-color:  #8A949B;
+	color: #FFFFFF;
+}
+
+.employee-select-btn{
+	width:100%;
+	height:70px;
+	background-color: white;
+	margin: 2px;
+}
+
+.employee-select-btn:hover{
+	background-color: #336699;
+}
+
+.selected{
+	background-color: #243743;
+}
+
+.emp-thumbnail{
+	width:auto;
+	height:64px;
+	padding:5px;
+	margin:3px;
+	line-height:64px;
+}
+
 .employee-name{
 	margin: 5px;
 	padding-left: 10px;
@@ -43,10 +71,20 @@ h1{
 	text-align: center;
 }
 
+h3{
+	margin-top:0;
+}
+
 p input{
 	float:right;
 }
 
 .col-md-6{
 	margin:1em;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.col-md-4{
+		padding-top:15px;
+		padding-bottom:15px;
 }

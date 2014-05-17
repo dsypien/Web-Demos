@@ -12,6 +12,7 @@
 </head>
 <body cz-shortcut-listen="true">
 	
+	<!--NAVBAR-->
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
       <div class="container">
         <div class="navbar-header">
@@ -32,17 +33,25 @@
         </div>
       </div>
     </div>
+    <!--END NAVBAR-->
 
 	<div>
 		<h1>Employee Information</h1>
 	    <div id="main-content" class="container row">
 			<div class="starter-template row"  ng-controller='employeesController' >
-				<div class="col-md-4">		        
-				    <h3>Select Employee : </h3>
-					<select ng-model="selectedEmployee" ng-options="emp.firstname+' ' +emp.lastname for emp in employees"></select>
-					
+				<!--EMPLOYEE SELECT SECTION-->
+				<div id="employee-slect-ctrl" class="col-md-4">		        
+				    <h3>Select Employee : </h3>	
+					<div ng-repeat="employee in employees">		
+						<div class="employee-select-btn" ng-click="employeeClicked($index)" ng-class="{selected: $index==selectedIndex}">
+							<img class="emp-thumbnail" ng-src="{{employee.pic}}">
+							
+						</div>
+					</div>
 				</div>
+				<!--END EMPLOYEE SELECT SECTION-->
 
+				<!--EMPLOYEE DETAILS-->
 				<div id="employee-details" class="col-md-8">
 					<p>First <input type="text" ng-model="selectedEmployee.firstname"></input> </p>
 					<p>Last<input type="text" ng-model="selectedEmployee.lastname"></input></p>
@@ -50,6 +59,7 @@
 					<p>Hire Date<input type="text" ng-model="selectedEmployee.hired"></input></p>
 					<img id="employee-pic" class="img-thumbnail" ng-src="{{selectedEmployee.pic}}">
 				</div>
+				<!--END EMPLOYEE DETAILS -->
   			</div>
 	  	</div>
 	  </div>
