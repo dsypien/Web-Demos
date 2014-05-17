@@ -2,7 +2,6 @@ var app = angular.module('employeesApp', []);
 
 app.controller('employeesController', function($scope){
 	$scope.employees = [
-	  	{'firstname': 'James', 'lastname': 'Madison', 'dept': 'R&D', 'hired': '1/1/2009','ID': 80, 'pic':'http://www.raisingourkids.com/coloring-pages/patriotic/presidents/04-James-Madison/free/001-james-madison-coloring-pages.gif'},
 	    {'firstname': 'Peter', 'lastname':  'Griffen', 'dept': 'R&D', 'hired': '4/23/2014' ,'ID': 21, 'pic':'http://upload.wikimedia.org/wikipedia/en/c/c2/Peter_Griffin.png'},
 	    {'firstname': 'Eric', 'lastname': 'Cartman', 'dept': 'HR', 'hired': '5/9/2006','ID': 87, 'pic': 'http://upload.wikimedia.org/wikipedia/en/thumb/7/77/EricCartman.png/220px-EricCartman.png'},
 	    {'firstname': 'Dora', 'lastname': 'Explorer', 'dept': 'R&D', 'hired': '6/13/2004','ID': 13, 'pic': 'http://cdn.pjmedia.com/lifestyle/files/2014/03/550px-doratheexplorer-color-step-11.jpg'},

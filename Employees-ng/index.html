@@ -36,23 +36,24 @@
     <!--END NAVBAR-->
 
 	<div>
-		<h1>Employee Information</h1>
 	    <div id="main-content" class="container row">
 			<div class="starter-template row"  ng-controller='employeesController' >
 				<!--EMPLOYEE SELECT SECTION-->
-				<div id="employee-slect-ctrl" class="col-md-4">		        
+				<div id="employee-slect-ctrl" class="col-md-3">		        
 				    <h3>Select Employee : </h3>	
 					<div ng-repeat="employee in employees">		
 						<div class="employee-select-btn" ng-click="employeeClicked($index)" ng-class="{selected: $index==selectedIndex}">
 							<img class="emp-thumbnail" ng-src="{{employee.pic}}">
-							
+							<div class="emp-name"> {{employee.firstname}}&nbsp{{employee.lastname}}
+							</div>
 						</div>
 					</div>
 				</div>
 				<!--END EMPLOYEE SELECT SECTION-->
 
 				<!--EMPLOYEE DETAILS-->
-				<div id="employee-details" class="col-md-8">
+				<div id="employee-details" class="col-md-9">
+					<h3>Employee Information:</h3>
 					<p>First <input type="text" ng-model="selectedEmployee.firstname"></input> </p>
 					<p>Last<input type="text" ng-model="selectedEmployee.lastname"></input></p>
 					<p>Department<input type="text" ng-model="selectedEmployee.dept"></input></p>
