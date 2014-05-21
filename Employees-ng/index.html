@@ -2,7 +2,6 @@
 <html ng-app="employeesApp">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-USA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Employees App (Angular) </title>
 
@@ -40,8 +39,9 @@
 			<div class="starter-template row"  ng-controller='employeesController' >
 				<!--EMPLOYEE SELECT SECTION-->
 				<div id="employee-slect-ctrl" class="col-md-3">		        
-				    <h3>Select Employee : </h3>	
-					<div ng-repeat="employee in employees">		
+				    <input type="text" ng-model='employeeFilter'/>
+				    <span class="glyphicon glyphicon-filter"> </span>
+					<div ng-repeat="employee in employees | filter:employeeFilter">		
 						<div class="employee-select-btn" ng-click="employeeClicked($index)" ng-class="{selected: $index==selectedIndex}">
 							<img class="emp-thumbnail" ng-src="{{employee.pic}}">
 							<div class="emp-name"> {{employee.firstname}}&nbsp{{employee.lastname}}
