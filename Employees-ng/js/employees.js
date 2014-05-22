@@ -12,10 +12,12 @@ app.controller('employeesController', function($scope){
 	];
 
 	$scope.selectedEmployee = $scope.employees[0];
-	$scope.selectedIndex = 0;
+	$scope.selectedId= 0;
 
-	$scope.employeeClicked = function(index){
-		$scope.selectedIndex = index;
-		$scope.selectedEmployee = $scope.employees[index];
+	$scope.employeeClicked = function(id){
+		$scope.selectedId = id;
+		$scope.selectedEmployee = $.grep($scope.employees, function(e){
+			return e.ID == id;
+		})[0];
 	};
 });
