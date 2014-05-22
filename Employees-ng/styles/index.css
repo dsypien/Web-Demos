@@ -6,6 +6,9 @@
 	overflow: hidden;
 }
 
+#employee-select-wdgt{
+	margin-top: 20px;
+}
 
 #employee-list{
 	float:left;
@@ -18,8 +21,17 @@
 
 #employee-details{
 	max-width: 450px;
+	padding-top:24px;
+	padding-left:45px;
 }
 
+#employee-details p{
+	margin-bottom: 15px;
+}
+
+#filter-txt-box{
+	float:right;
+}
 
 #employee-pic{
 	width: 200px;

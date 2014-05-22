@@ -33,18 +33,21 @@
       </div>
     </div>
     <!--END NAVBAR-->
-
 	<div>
 	    <div id="main-content" class="container row">
 			<div class="starter-template row"  ng-controller='employeesController' >
 				<!--EMPLOYEE SELECT SECTION-->
-				<div id="employee-slect-ctrl" class="col-md-3">		        
-				    <input type="text" ng-model='employeeFilter'/>
-				    <span class="glyphicon glyphicon-filter"> </span>
-					<div ng-repeat="employee in employees | filter:employeeFilter">		
-						<div class="employee-select-btn" ng-click="employeeClicked(employee.ID)" ng-class="{selected: employee.ID==selectedId}">
-							<img class="emp-thumbnail" ng-src="{{employee.pic}}">
-							<div class="emp-name"> {{employee.firstname}}&nbsp{{employee.lastname}}
+				<div id="employee-slect-ctrl" class="col-md-3">	
+					<span class="glyphicon glyphicon-filter"> </span>
+					Filter :	        
+				    <input id="filter-txt-box" type="text" ng-model='employeeFilter'/>
+
+					<div id='employee-select-wdgt'>
+						<div ng-repeat="employee in employees | filter:employeeFilter">		
+							<div class="employee-select-btn" ng-click="employeeClicked(employee.ID)" ng-class="{selected: employee.ID==selectedId}">
+								<img class="emp-thumbnail" ng-src="{{employee.pic}}">
+								<div class="emp-name"> {{employee.firstname}}&nbsp{{employee.lastname}}
+								</div>
 							</div>
 						</div>
 					</div>
