@@ -46,7 +46,10 @@
 						<div ng-repeat="employee in employees | filter:employeeFilter">		
 							<div class="employee-select-btn" ng-click="employeeClicked(employee.ID)" ng-class="{selected: employee.ID==selectedId}">
 								<img class="emp-thumbnail" ng-src="{{employee.pic}}">
-								<div class="emp-name"> {{employee.firstname}}&nbsp{{employee.lastname}}
+								<div class="emp-name"> {{employee.firstname}}&nbsp{{employee.lastname}}</br>
+									<span class='title'>
+										{{employee.title}}
+									</span>
 								</div>
 							</div>
 						</div>
@@ -60,6 +63,7 @@
 					<p>First <input type="text" ng-model="selectedEmployee.firstname"></input> </p>
 					<p>Last<input type="text" ng-model="selectedEmployee.lastname"></input></p>
 					<p>Department<input type="text" ng-model="selectedEmployee.dept"></input></p>
+					<p>Title<input type="text" ng-model="selectedEmployee.title"></input></p>
 					<p>Hire Date<input type="text" ng-model="selectedEmployee.hired"></input></p>
 					<img id="employee-pic" class="img-thumbnail" ng-src="{{selectedEmployee.pic}}">
 				</div>

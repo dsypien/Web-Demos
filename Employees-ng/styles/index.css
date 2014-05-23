@@ -54,6 +54,8 @@
 	margin:0;
 	height:72px;
 	width:105%;
+	cursor: pointer;
+	cursor: hand;
 }
 
 .selected{
@@ -73,6 +75,12 @@
 	padding-left: 10px;
 	float:right;
 	font-size:18px;
+	text-align: right;
+}
+
+.title{
+	font-size: 12px;
+	color: #D6EBF2;
 }
 
 .list-group{
