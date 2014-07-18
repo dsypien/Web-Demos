@@ -30,8 +30,6 @@ app.use(function(req,res,next){
     next();
 });
 
-console.log(db.get('usercollection'));
-
 app.use('/', routes);
 app.use('/users', users);
 
@@ -40,6 +38,17 @@ app.use(function(req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
     next(err);
+});
+
+// set heder
+app.use(function(req, res, next){
+    res.setHeader('X-Powered-By', 'EmmasApps');
+    next();
+});
+
+var users = db.get('usercollection');
+users.find({}).on('success', function (doc) { 
+    console.log(doc);
 });
 
 /// error handlers
