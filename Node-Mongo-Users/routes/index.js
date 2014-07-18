@@ -21,7 +21,7 @@ router.get('/userlist', function(req, res){
 	});
 });
 
-router.get('/newuser', function(req, res){
+router.get('/adduser', function(req, res){
 	res.render('adduser', {title : "Add new user"});
 });
 
