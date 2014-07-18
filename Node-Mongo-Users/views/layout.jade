@@ -2,6 +2,14 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet',href='/stylesheets/style.css')
   body
+    nav
+      each page in [{route: "/userlist", name: 'Home'}, {route: "/adduser", name: 'Add user'}]
+        if (menu=="Home")
+          li.active
+            a(href=page.route)= page.name
+        else
+          li
+            a(href=page.route)= page.name
     block content
