@@ -4,12 +4,16 @@ html
     title= title
     link(rel='stylesheet',href='/stylesheets/style.css')
   body
-    nav
-      each page in [{route: "/userlist", name: 'Home'}, {route: "/adduser", name: 'Add user'}]
-        if (menu=="Home")
-          li.active
-            a(href=page.route)= page.name
-        else
-          li
-            a(href=page.route)= page.name
-    block content
+    block link
+      -var selected = 'Home'      
+    header
+      nav
+        each page in [{route: "/", name: 'Home'},{route: "/userlist", name: 'Users'}, {route: "/adduser", name: 'Add user'}]
+          if selected === page.name
+            li(class='selected')
+              a(href=page.route)= page.name
+          else
+            li
+              a(href=page.route)= page.name
+    div(id="main-content")      
+        block content

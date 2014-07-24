@@ -3,6 +3,8 @@ extends layout
 block content
     h1.
         User List
+    block link
+       -selected="Users"
     ul
         each user, i in userlist
             li
