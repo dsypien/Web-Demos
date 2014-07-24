@@ -3,11 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
-});
-
-router.get('/helloworld', function(req, res){
-	res.render('helloworld', {title: 'The Node.js/MongoDB user demo app!!!'});
+  res.render('index', { title: 'Email Users' });
 });
 
 router.get('/userlist', function(req, res){
@@ -16,6 +12,19 @@ router.get('/userlist', function(req, res){
 
 	collection.find({}, {}, function(e,docs){
 		res.render('userlist', {
+			"title" : "User List",
+			"userlist" : docs
+		});
+	});
+});
+
+router.get('/userlist/json', function(req, res){
+	var db = req.db,
+		collection = db.get('usercollection');
+
+	collection.find({}, {}, function(e,docs){
+		res.json('userlist', {
+			"title" : "User List",
 			"userlist" : docs
 		});
 	});
