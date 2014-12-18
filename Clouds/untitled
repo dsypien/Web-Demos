@@ -1,0 +1,226 @@
+
+<!--[[U0:giftAdjust=152318]] rounded up to the nearest dollar NO cents or commas-->
+<style type="text/css">
+#countdown{
+        display:none !important;
+        background-color: white;
+        float :right;
+	width:385px;
+	height:40px;
+	background-color: #fff;
+	margin: 0 auto;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	color: #666;
+	padding: 5px 0 2px 0px;
+        margin: 8px 40px;
+}
+
+#topFundraisersOne, #topFundraisersTwo{
+  width: 50%;
+  float:left;
+}
+
+#topFundraisersTwo{
+  margin-top:15px;
+}
+
+#topFundraisersTwo p {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size:12px;
+}
+
+#topFundraisersTwo p a{
+  font-weight:bold;
+}
+
+.vScroll{
+   border:none;
+   padding: 0;
+   margin: 0;
+}
+
+.vScroll .title{
+   display:none !important;
+}
+
+.vScroll .scrollContent {
+   margin-bottom:0;
+   margin-top: 5px;
+   margin-right: 0;
+   padding: 10px 0 0 20px;
+}
+
+.vScroll .scrollContent p{
+  margin: 0 !important;
+  padding: 0 !important;
+  float:left;
+  min-width:110px;
+}
+
+.vScroll .scrollContent p a{
+ font-weight: bold;
+}
+
+.mlabel{
+        font-size: 11px;
+}
+
+.fredsteam-col{
+	float:left;
+	text-align:right;
+	padding: 0 10px 0 0;
+	font-size: 10px;
+	border
+}
+
+.fredsteam-col:first{
+	padding-top:3px;
+}
+
+.fredsteam-col .fredsteam-num{
+	color: #FF6C00;
+	font-size: 24px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 6px;
+}
+
+.fredsteam-col .fredsteam-label{
+	border-right: 1px solid #777;
+	padding-right:10px;
+}
+
+.fredsteam-last-col{
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.fredsteam-noborder{
+	border-right: none !important;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.fredsteam-bold{
+	font-weight: bolder;
+}
+
+#fredsteam-title{
+	margin-top:6px;
+	padding-right:15px;
+        padding-left: 15px;
+        line-height: 10px;
+}
+
+.column1-wide {
+	width: 895px;
+	/**min-height: 500px;**/
+	margin-left: -14px;
+}
+.column1-2 {
+	margin-right: 10px !important;}
+
+.column1-2-wrap {
+    width: 44% !important;
+}
+
+#ft_footer > div.column1-2-wrap {width:48% !important;}
+
+#ft_footer > ul { padding: 0px; }
+
+#slideshowFP {margin-left: -9px !important;}
+
+#searchContainer {width:878px;}
+
+/**** hide the therm styles*****/
+/****to unhide the therm toggle the comments in the 2 styles below***/
+.thermometer-containerFP {
+     /*  display: none;*/
+     display: inherit
+}
+#searchContainer {
+       margin: 10px 0px 12px -9px;
+     /*margin: -10px 0px 12px -9px;*/
+}
+/****end hide therm styles***/
+</style>
+
+<!--[[U0:fb_desc=Join Fred&#8217;s Team&#8212;Memorial Sloan Kettering&#8217;s (MSK) marathon fundraising program. Make your miles more meaningful: when you run with Fred&#8217;s Team, you choose the area of cancer research you&#8217;d like to support at MSK. Register, or donate today: www.fredsteam.org.]]-->
+<!--front slides-->
+<div class="">
+<div class="slide-container">
+[[S51:ft_front_slides_wide]]
+</div>
+<!--therm-->
+<div class="thermometer-containerFP">
+[[S51:ft_front_thermometer]]
+</div>
+<div id="countdown"></div>
+<!-- search-->
+<div class="searchbox-container">
+[[S51:ft_front_search_wide]]
+</div>
+<div class="clear"></div>
+<!-- Promo box callouts-->
+<div class="column1-wide">
+  <div class="column1-3 promobox">
+    <h3>FRED'S TEAM</h3>
+    <h4>FRED'S TEAM</h4>
+    <p> Participants run marathons and other races all over the world to support lifesaving research at Memorial Sloan Kettering. </p>
+    <h4>$59 MILLION</h4>
+    <p>Total amount raised since 1995.</p>
+    <h4>50</h4>
+    <p>Areas of cancer research supported by Fred's Team.</p>
+    <h4>FIRST</h4>
+    <p>Charity Partner of the New York City Marathon</p>
+  </div>
+  <div class="column1-3 promobox">
+    <h3>EVENTS</h3>
+    <h4><a href="PageServer?pagename=ft_races_nyc" title="Click here to find out more!" target="_self">TCS NEW YORK CITY MARATHON</a></h4>
+    <p>November 2, 2014<br>
+      <a style="font-size:12px" href="PageServer?pagename=ft_races_nyc">More ></a></p>
+    <h4><a href="PageServer?pagename=ft_races_nyc_half" title="Click here to find out more!" target="_self">NYC HALF</a></h4>
+    <p>March 15, 2015<br>
+      <a style="font-size:12px" href="PageServer?pagename=ft_races_nyc_half">More ></a></p>
+    <h4><a href="PageServer?pagename=ft_races_boston" title="Click here to find out more!" target="_self">BOSTON MARATHON</a></h4>
+    <p>April 20, 2015<br>
+      <a style="font-size:12px" href="PageServer?pagename=ft_races_boston">More ></a></p>
+    <h4><a href="PageServer?pagename=ft_races_cyoe" title="Click here to find out more!" target="_self">CHOOSE YOUR OWN EVENT</a></h4>
+    <p>Anytime, anywhere!<br>
+      <a style="font-size:12px" href="PageServer?pagename=ft_races_cyoe">More ></a></p>
+  </div>
+  <div class="column1-3 promobox">
+    <h3>TOP FUNDRAISERS</h3>
+    <div id='topFundraisersOne'>
+      [[S36:top_participants_list,2150,0,0,textarea,sum,14,]]
+    </div>
+    <div id='topFundraisersTwo' class='vScroll scrollContent'>
+    </div>
+    <p style="margin-left:25px; margin-top:5px; font-size:12px; clear:both;padding-top:5px;"><a href="http://mskcc.convio.net/site/PageServer?pagename=ft_races_top_fundraisers" target="_blank">View more top fundraisers ></a></p>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="column1-2-wrap">
+  <div class="column1-2"> <a href="http://mskcc.convio.net/site/PageServer?pagename=ft_why_we_run_videos#prettyPhoto/1/"><img src="../images/content/pagebuilder/FT2014_videoscreenshot_coachjeff_homepage2.jpg" width="378" height="300" border="0" style="margin-left: -8px;"/></a> </div>
+</div>
+<div class="column2-2"> <a href="PageServer?pagename=ft_races_cyoe"><img src="../images/content/pagebuilder/FT2014_cyoeimage_homepage.jpg" width="475" height="300" border="0" style="margin-left: 15px;"></a> </div>
+
+
+<script type="text/javascript" src="../jquery/plugins/countdown/jquery.countdown.js"></script>
+
+
+<script>
+window.onload = function () {
+var marathonDate = new Date(2014, 10, 2,10, 40, 0);
+
+$('#countdown').appendTo('#ft_header');
+ $('#countdown').countdown({until: 
+    $.countdown.UTCDate(-5, marathonDate), layout: '<div id="fredsteam-title" class="fredsteam-col">Countdown to the<br><span class="mlabel fredsteam-bold">TCS NYC MARATHON</span></div><div class="fredsteam-col"><span class="fredsteam-num fredsteam-bold">{dn}</span><span id="days" class="fredsteam-label">Days</span></div><div class="fredsteam-col"><span class="fredsteam-num fredsteam-bold">{hnn}</span><span id="hours" class="fredsteam-label">Hours</span></div><div class="fredsteam-col fredsteam-last-col"><span class="fredsteam-num fredsteam-bold">{mnn}</span><span id="minutes" class="fredsteam-label  fredsteam-noborder">Minutes</span></div>'})
+};
+
+for(var i = 14; i > 6; i--){
+
+  $('.scrollContent p').eq(i).prependTo('#topFundraisersTwo');
+}
+
+</script>
