@@ -6,9 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var passport = require('passport');
-var expressSession = require('express-session');
-
-var routes = require('./routes/index');
+var exepressSession = require('express-session');
 
 var app = express();
 
@@ -17,9 +15,18 @@ var dbConfig = require('./db.js');
 mongoose.connect(dbConfig.url);
 
 // Configure Passport
-app.use(expressSession({secret : '2k!Vpx6w9$o5pQ%M-K3Y'}));
+app.use(exepressSession({
+    secret : '2k!Vpx6w9$o5pQ%M-K3Y',
+    saveUninitialized: true,
+    resave: true
+}));
 app.use(passport.initialize());
 app.use(passport.session());
+
+// Use Flash middleware to store messages in session and display in templates
+var flash = require('connect-flash');
+app.use(flash());
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -34,6 +41,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Configure ROUTES
+var routes = require('./routes/index')(passport);
 app.use('/', routes);
 
 // catch 404 and forward to error handler
